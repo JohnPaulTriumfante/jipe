@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="js/bootstrap.min.js"></script>
     <style>
+
+        
         body.light-theme {
             background-color: #92a4b8;
             color: #000000; 
@@ -108,13 +110,15 @@
             width: 50vw;
             height: 40vw;
         }
-        h1 {
+         h1 {
             font-size: 70px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: bold;
             line-height: 0;
             margin-bottom: 55px;
+
         }
+        
 
         p {
             font-size: 30px;
@@ -192,7 +196,27 @@
             color: #333;
             padding: 10px;
 
+        }    
+
+        #skills h1 {
+            font-size: 40px;
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 20px;
+    
         }
+        #skills h2 {
+            font-size: 15px;
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        #contact h1 {
+            font-size: 40px;
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 20px;
+           
+        }
+        
         #contact {
             font-size: 25px;
             margin-top: 200px;
@@ -207,7 +231,7 @@
             text-align: left; 
         }
         .btn-default1 {
-            margin-top: 100px;
+            margin-top: 50px;
             margin-left: 500px;
             align-items: center;
             justify-content: center;
@@ -275,7 +299,9 @@
         <div class="home-container">
                 <h1>Hey there! I'm</h1>
                 <h1 class="Name" style="font-size: 70px; color: #3bcfe9 !important; font-weight: bold; margin-top: 30px; margin-bottom: 40px;">John Paul Triumfante</h1>
-                <p>A third-year BSIT student, currently honing<br> my skills to become a future Front-End Developer. Based in the Philippines.</p>
+                <div class="col-xs-12">
+                <p>A third-year BSIT student, currently honing my skills to become a future Front-End Developer. Based in the Philippines.</p>
+                </div>
                 <a href="#contact" class="btn btn-default">Contact</a>
             </div>    
             <div>
@@ -298,10 +324,10 @@
         </div>
     </section>
 
-    <section id="skills" class="container">
+    <section id="skills" class="container" style="height: 30vw; ">
         <div class="page-header">
             <h1 class="text-center">Skills</h1>
-            <p class="Technologies">Technologies</p>
+            <h2 class="text-center">Technologies</h2>
         </div>
         <div class="row text-center">
             <div class="col-xs-6 col-sm-2 col-md-2">
@@ -322,6 +348,7 @@
             <div class="col-xs-6 col-sm-2 col-md-2">
                 <img src="pic/s8.svg" class="img-thumbnail icon" data-toggle="tooltip" data-placement="top" title="PHP">
             </div>
+            
         </div>
     </section>
 
@@ -335,6 +362,7 @@
                 </p>
             </div>
         </div>
+        
         <button class="btn btn-default1" data-toggle="modal" data-target="#contactModal">Contact Me!</button>
         <div class="modal fade" id="contactModal" >
             <div class="modal-dialog" role="document">
